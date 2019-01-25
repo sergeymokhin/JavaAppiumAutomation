@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.URL;
+import java.util.List;
 
 public class FirstTest {
 
@@ -41,11 +42,34 @@ public class FirstTest {
     }
 
     @Test
-    public void testFindSearchFieldPlaceholder()
+    public void testCancelOfSearch()
     {
         waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
                 "Can not find 'Search Wikipedia' input",
+                5
+        );
+
+        waitForElementAndSendKeys(
+                By.xpath("//*[contains(@text,'Search…')]"),
+                "Swift",
+                "Can not find search input",
+                10
+        );
+
+        waitForElementPresent(
+                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']"),
+                "Can not find search result",
+                15
+        );
+
+        List res = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
+
+        Assert.assertTrue("We did non find anything, but we should", res.size() > 0);
+
+        waitForElementAndClick(
+                By.id("org.wikipedia:id/search_close_btn"),
+                "Can not find X to cancel search",
                 5
         );
 
@@ -65,7 +89,7 @@ public class FirstTest {
     }
 
 
-    
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
