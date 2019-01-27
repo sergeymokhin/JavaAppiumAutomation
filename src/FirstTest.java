@@ -44,6 +44,8 @@ public class FirstTest {
     @Test
     public void testCancelOfSearch()
     {
+        String textForSearching = "Nirvana";
+
         waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
                 "Can not find 'Search Wikipedia' input",
@@ -52,44 +54,34 @@ public class FirstTest {
 
         waitForElementAndSendKeys(
                 By.xpath("//*[contains(@text,'Search…')]"),
-                "Swift",
+                textForSearching,
                 "Can not find search input",
                 10
         );
 
         waitForElementPresent(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']"),
+                By.id("org.wikipedia:id/page_list_item_container"),
                 "Can not find search result",
                 15
         );
 
-        List res = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
+        List<WebElement> elementsList = driver.findElements(By.id("org.wikipedia:id/page_list_item_title"));
 
-        Assert.assertTrue("We did non find anything, but we should", res.size() > 0);
+        int counter = 0;
 
-        waitForElementAndClick(
-                By.id("org.wikipedia:id/search_close_btn"),
-                "Can not find X to cancel search",
-                5
-        );
+        for (WebElement element: elementsList)
+        {
+            if (element.getAttribute("text").contains(textForSearching))
+                counter += 1;
+            else
+                System.out.println("Not all search results contains searched text");
+        }
 
-        WebElement search_field = waitForElementPresent(
-                By.id("org.wikipedia:id/search_src_text"),
-                "Can not find search field",
-                15
-        );
+        Assert.assertTrue("Searched text " +
+                "does not present in all search result", elementsList.size() == counter);
 
-        String placeholder = search_field.getAttribute("text");
-
-        Assert.assertEquals(
-                "We do not see search field placeholder",
-                "Search…",
-                placeholder
-        );
     }
-
-
-
+    
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);

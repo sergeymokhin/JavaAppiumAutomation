@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9039505e-8bff-452a-a18f-fa7e4edb3fcf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -16,8 +17,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+            <state relative-caret-position="678">
+              <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#998#999#0" expanded="true" />
@@ -78,7 +79,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548456298869" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548614148871" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -170,34 +171,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 23m 27s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 19h 18m 43s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 24m 15s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 19h 19m 15s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 25m 49s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 19h 21m 43s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 29m 03s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 19h 22m 15s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 37m 05s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 19h 22m 58s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 37m 56s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 19h 24m 43s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 39m 13s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 20h 15m 06s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 39m 53s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 20h 15m 42s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 41m 10s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 20h 16m 23s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.26 at 00h 44m 55s.xml">
+    <history-entry file="FirstTest_testCancelOfSearch - 2019.01.27 at 20h 26m 33s.xml">
       <configuration name="FirstTest.testCancelOfSearch" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -236,8 +237,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="87" column="10" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="10" />
+        <state relative-caret-position="678">
+          <caret line="84" column="57" selection-start-line="84" selection-start-column="57" selection-end-line="84" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#998#999#0" expanded="true" />
