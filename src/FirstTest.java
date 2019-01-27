@@ -42,7 +42,7 @@ public class FirstTest {
     }
 
     @Test
-    public void testCancelOfSearch()
+    public void testSearchResultsContainsMultipleMatching()
     {
         String textForSearching = "Nirvana";
 
@@ -81,7 +81,7 @@ public class FirstTest {
                 "does not present in all search result", elementsList.size() == counter);
 
     }
-    
+
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
     {
         WebDriverWait wait = new WebDriverWait(driver, timeoutInSeconds);
