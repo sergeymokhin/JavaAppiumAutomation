@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9039505e-8bff-452a-a18f-fa7e4edb3fcf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/HomeWork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaAppiumAutomation/FirstTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HomeWork.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HomeWork.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,7 +16,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6120">
+            <state relative-caret-position="4241">
               <caret line="411" selection-start-line="411" selection-end-line="411" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -33,10 +30,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/HomeWork.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+            <state relative-caret-position="639">
+              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#10495#10496#0" expanded="true" />
+                <element signature="e#10523#10524#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,6 +56,7 @@
       <find>can</find>
       <find>Learning programming</find>
       <find>Java (programming language)</find>
+      <find>dri</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -102,7 +102,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548848376586" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1548855694140" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -119,7 +119,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest">
+  <component name="RunManager" selected="JUnit.HomeWork.testAssertTitle">
     <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
@@ -129,31 +129,31 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testCompareArticleTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeWork.assertElementPresent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testCompareArticleTitle" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork" />
+      <option name="METHOD_NAME" value="assertElementPresent" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testSaveFirstArticleToMyList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeWork.testAssertTitle" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSaveFirstArticleToMyList" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork" />
+      <option name="METHOD_NAME" value="testAssertTitle" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FirstTest.testSaveTwoArticles" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="HomeWork.testAssertTitleVova" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaAppiumAutomation" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FirstTest" />
-      <option name="METHOD_NAME" value="testSaveTwoArticles" />
+      <option name="MAIN_CLASS_NAME" value="HomeWork" />
+      <option name="METHOD_NAME" value="testAssertTitleVova" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.HomeWork.testAssertTitle" />
+        <item itemvalue="JUnit.HomeWork.testAssertTitleVova" />
+        <item itemvalue="JUnit.HomeWork.assertElementPresent" />
         <item itemvalue="JUnit.FirstTest" />
         <item itemvalue="JUnit.HomeWork.testSaveTwoArticles" />
-        <item itemvalue="JUnit.FirstTest.testSaveTwoArticles" />
-        <item itemvalue="JUnit.FirstTest.testSaveFirstArticleToMyList" />
-        <item itemvalue="JUnit.FirstTest.testCompareArticleTitle" />
       </list>
     </recent_temporary>
   </component>
@@ -193,35 +193,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="FirstTest_testSaveTwoArticles - 2019.01.30 at 11h 51m 41s.xml">
-      <configuration name="FirstTest.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_assertElementPresent - 2019.01.30 at 14h 42m 51s.xml">
+      <configuration name="HomeWork.assertElementPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSaveTwoArticles - 2019.01.30 at 13h 03m 41s.xml">
-      <configuration name="FirstTest.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_assertElementPresent - 2019.01.30 at 14h 43m 35s.xml">
+      <configuration name="HomeWork.assertElementPresent" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSaveTwoArticles - 2019.01.30 at 13h 08m 00s.xml">
-      <configuration name="FirstTest.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 14h 56m 09s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSaveTwoArticles - 2019.01.30 at 13h 11m 08s.xml">
-      <configuration name="FirstTest.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitleVova - 2019.01.30 at 14h 57m 11s.xml">
+      <configuration name="HomeWork.testAssertTitleVova" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSaveFirstArticleToMyList - 2019.01.30 at 13h 12m 10s.xml">
-      <configuration name="FirstTest.testSaveFirstArticleToMyList" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 14h 58m 57s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSaveTwoArticles - 2019.01.30 at 13h 20m 27s.xml">
-      <configuration name="FirstTest.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 14h 59m 53s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest_testSaveTwoArticles - 2019.01.30 at 13h 24m 46s.xml">
-      <configuration name="FirstTest.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 15h 14m 01s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomeWork_testSaveTwoArticles - 2019.01.30 at 13h 32m 21s.xml">
-      <configuration name="HomeWork.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 15h 39m 28s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HomeWork_testSaveTwoArticles - 2019.01.30 at 13h 34m 53s.xml">
-      <configuration name="HomeWork.testSaveTwoArticles" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 15h 40m 08s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="FirstTest - 2019.01.30 at 13h 38m 57s.xml">
-      <configuration name="FirstTest" configurationId="JUnit" />
+    <history-entry file="HomeWork_testAssertTitle - 2019.01.30 at 15h 40m 35s.xml">
+      <configuration name="HomeWork.testAssertTitle" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -270,9 +270,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/java-client-4.1.2.jar!/io/appium/java_client/DefaultGenericMobileDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
+          <folding>
+            <element signature="e#1460#1461#0" expanded="true" />
+            <element signature="e#1508#1509#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/libs/selenium-server-standalone-3.4.0.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="383" column="22" selection-start-line="383" selection-start-column="22" selection-end-line="383" selection-end-column="22" />
+          <folding>
+            <element signature="e#14824#14825#0" expanded="true" />
+            <element signature="e#14876#14877#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/FirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6120">
+        <state relative-caret-position="4241">
           <caret line="411" selection-start-line="411" selection-end-line="411" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -284,10 +306,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HomeWork.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="46" column="41" selection-start-line="46" selection-start-column="41" selection-end-line="46" selection-end-column="41" />
+        <state relative-caret-position="639">
+          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#10495#10496#0" expanded="true" />
+            <element signature="e#10523#10524#0" expanded="true" />
           </folding>
         </state>
       </provider>

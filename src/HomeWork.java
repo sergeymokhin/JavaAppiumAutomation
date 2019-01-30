@@ -44,7 +44,7 @@ public class HomeWork {
     }
 
     @Test
-    public void testSaveTwoArticles() // Ex5: Тест: сохранение двух статей
+    public void testAssertTitle()
     {
         waitForElementAndClick(
                 By.xpath("//*[contains(@text,'Search Wikipedia')]"),
@@ -52,187 +52,37 @@ public class HomeWork {
                 5
         );
 
-        String first_article = "Java";
-
         waitForElementAndSendKeys(
                 By.xpath("//*[contains(@text,'Search…')]"),
-                first_article,
+                "Java",
                 "Can not find search input",
                 10
         );
 
-        waitForElementAndClick(
-                By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']//*[@text='Object-oriented programming language']"),
-                "Can not find 'Search Wikipedia' input",
-                5
-        );
-
         waitForElementPresent(
-                By.id("org.wikipedia:id/view_page_title_text"),
-                "Can not find article title",
-                15
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
-                "Can not find button to open article options",
-                5
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@text='Add to reading list']"),
-                "Options menu doesn't appear",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='Add to reading list']"),
-                "Can not find option to add article to reading list",
-                10
-        );
-
-        waitForElementAndClick(
-                By.id("org.wikipedia:id/onboarding_button"),
-                "Can not find 'Got it' tip overlay",
-                10
-        );
-
-        waitForElementAndClear(
-                By.id("org.wikipedia:id/text_input"),
-                "Cannot find input to set name of articles folder",
-                5
-        );
-
-        String folder_name = "Learning programming";
-
-        waitForElementAndSendKeys(
-                By.id("org.wikipedia:id/text_input"),
-                folder_name,
-                "Cannot put text into articles folder input",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='OK']"),
-                "Cannot press 'OK' button",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "Can not close article, can not find X link",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[contains(@text,'Search Wikipedia')]"),
-                "Can not find 'Search Wikipedia' input",
-                5
-        );
-
-        String second_article = "Swift";
-
-        waitForElementAndSendKeys(
-                By.xpath("//*[contains(@text,'Search…')]"),
-                second_article,
-                "Can not find search input",
-                10
-        );
-
-        waitForElementAndClick(
                 By.xpath("//*[@resource-id='org.wikipedia:id/page_list_item_container']" +
-                        "//*[@text='General-purpose, multi-paradigm, compiled programming language']"),
-                "Can not find 'Search Wikipedia' input",
+                        "//*[@text='Object-oriented programming language']"),
+                "Cannot find 'Search Wikipedia' input",
                 5
         );
 
-        waitForElementPresent(
+        assertElementPresent(
                 By.id("org.wikipedia:id/view_page_title_text"),
-                "Can not find article title",
-                15
+                "Element is Present, but we did not expected it"
         );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.ImageView[@content-desc='More options']"),
-                "Can not find button to open article options",
-                5
-        );
-
-        waitForElementPresent(
-                By.xpath("//*[@text='Add to reading list']"),
-                "Options menu doesn't appear",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='Add to reading list']"),
-                "Can not find option to add article to reading list",
-                10
-        );
-
-
-        waitForElementAndClick(
-                By.id("org.wikipedia:id/item_title"),
-                "Cannot click previously created reading list",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.ImageButton[@content-desc='Navigate up']"),
-                "Can not close article, can not find X link",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//android.widget.FrameLayout[@content-desc='My lists']"),
-                "Can not find navigation button to My List",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='" + folder_name + "']"),
-                "Can not find created folder",
-                5
-        );
-
-        String first_article_title = "Java (programming language)";
-
-        swipeElementToLeft(
-                By.xpath("//*[@text='" + first_article_title + "']"),
-                "Cannot find saved article"
-        );
-
-        waitForElementNotPresent(
-                By.xpath("//*[@text='" + first_article_title + "']"),
-                "Cannot delete saved article",
-                5
-        );
-
-        String second_article_title = "Swift (programming language)";
-
-        waitForElementPresent(
-                By.xpath("//*[@text='" + second_article_title + "']"),
-                "Cannot find non deleted article",
-                5
-        );
-
-        waitForElementAndClick(
-                By.xpath("//*[@text='" + second_article_title + "']"),
-                "Can not click on non deleted article",
-                5
-        );
-
-        String second_article_title_after_dive_in = waitForElementAndGetAttribute(
-                By.id("org.wikipedia:id/view_page_title_text"),
-                "text",
-                "Cannot get article title after dive in",
-                10
-        );
-
-        Assert.assertTrue("Article tittle does not match after deletion from reading list",
-                second_article_title.contentEquals(second_article_title_after_dive_in));
 
     }
+
+    public String assertElementPresent(By by, String error_message)
+    {
+        int amount_of_elements = getAmountOfElements(by);
+        if (amount_of_elements == 0) {
+            Assert.fail("An element '" + by.toString() + "' is absent.");
+        }
+        return error_message;
+    }
+
+
 
 
     private WebElement waitForElementPresent(By by, String error_message, long timeoutInSeconds)
