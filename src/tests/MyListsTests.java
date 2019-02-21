@@ -106,14 +106,16 @@ public class MyListsTests extends CoreTestCase {
 
         List<String> ArticlesAfterDelete = MyListsPageObject.addArticlesToList();
 
-        System.out.println(ArticlesAfterDelete.size());
-
-        System.out.println("Before " + ArticlesBeforeDelete.get(0));
-        System.out.println("After " + ArticlesAfterDelete.get(0));
+//        System.out.println(ArticlesAfterDelete.size());
+//
+//        System.out.println("Before " + ArticlesBeforeDelete.get(0));
+//        System.out.println("After " + ArticlesAfterDelete.get(0));
+//
+//        System.out.println(ArticlesBeforeDelete.get(0).equals(ArticlesAfterDelete.get(0)));
 
 
         Assert.assertTrue("Articles does not match",
-                ArticlesBeforeDelete.get(0) == ArticlesAfterDelete.get(0));
+                ArticlesBeforeDelete.get(0).equals(ArticlesAfterDelete.get(0)));
 
         Assert.assertTrue("It seems that we don't delete an article",
                 ArticlesAfterDelete.size() == 1 && ArticlesBeforeDelete.size() == 2);
